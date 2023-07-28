@@ -7,7 +7,7 @@ metadata:
   name: ngx-deploy
   namespace: techtalk
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: ngx-deploy
@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - image: nginx
-        name: nginx
+        name: nginx-great
         resources: {}
 status: {}
